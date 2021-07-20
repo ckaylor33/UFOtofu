@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" class="h-100">
   <head>
-    <title>App Name: A Coding Project By Charlie Kaylor</title>
+    <title>UFO TOFU: A Coding Project By Charlie Kaylor</title>
     <!-- Required meta tags -->
     <meta charset="utf-8" />
     <meta
@@ -33,9 +33,9 @@
     <!-- Nav Section -->
     <nav class="navbar navbar-expand-md navbar-dark fixed-top">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#"
-          ><i class="fas fa-code d-inline-block align-text-center"></i> APP
-          NAME</a
+        <a class="navbar-brand logoFont" href="index.html"
+          ><i class="fas fa-code d-inline-block align-text-center"></i> UFO
+          TOFU</a
         >
         <button
           class="navbar-toggler"
@@ -62,7 +62,12 @@
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link" target="_blank" href="#">Git Repo</a>
+              <a
+                class="nav-link"
+                target="_blank"
+                href="https://github.com/ckaylor33/UFOtofu"
+                >Git Repo</a
+              >
             </li>
             <li class="nav-item">
               <a class="nav-link" target="_blank" href="#">About</a>
@@ -74,24 +79,103 @@
     <!-- Main Section -->
     <main class="flex-shrink-0">
       <div class="container py-5 px-5 mt-5">
-        <h2 class="border-1 border-bottom border-dark">
-          The Code for APP NAME.
+        <h2 class="border-1 border-bottom border-dark customBorderBottom">
+          The Code for UFO TOFU.
         </h2>
         <div class="row row-cols-1 row-cols-lg-2">
           <div class="col-lg-8">
             <pre class="line-numbers"><code class="language-javascript">
-              //Call Hello World
-              function HelloWorld() {
-                alert('Hello World!')
+              //Get string value from the user
+              function getValue() {
+                document.getElementById('alert').classList.add('invisible')
+                document
+                  .getElementById('alert')
+                  .classList.remove('alert-success' && 'alert-danger')
+              
+                //get user string from the page
+                let userString = document.getElementById('userString').value
+              
+                //check for a palindrome
+                let returnObj = checkForPalindrome(userString)
+              
+                //display message to the screen
+                displayString(returnObj)
               }
+              
+              //Generate backwards string and check for palindrome
+              function checkForPalindrome(userString) {
+                userString = userString.toLowerCase()
+                //remove spaces and special characters
+                let regex = /[^a-z0-9]/gi
+                userString = userString.replace(regex, '')
+              
+                let revString = []
+                let returnObj = {}
+              
+                for (let index = userString.length - 1; index >= 0; index--) {
+                  revString += userString[index]
+                }
+              
+                if (revString == userString) {
+                  document.getElementById('alert').classList.add('alert-success')
+                  returnObj.msg = `Well done! You entered a palindrome!`
+                } else {
+                  document.getElementById('alert').classList.add('alert-danger')
+                  returnObj.msg = 'Sorry! You did not enter a palindrome!'
+                }
+              
+                returnObj.reversed = revString
+              
+                return returnObj
+              }
+              
+              //Display backwards string with checks
+              function displayString(returnObj) {
+                document.getElementById('alertHeader').innerHTML = returnObj.msg
+                document.getElementById(
+                  'userMessage'
+                ).innerHTML = `Your phrase reversed is: ${returnObj.reversed}`
+              
+                document.getElementById('alert').classList.remove('invisible')
+              }
+              
             </code></pre>
           </div>
           <div class="col-lg-4">
-            <p>The code is structured in one function.</p>
-            <h5>Hello World</h5>
+            <p>The code is structured in three functions.</p>
+            <h5>Get Value</h5>
             <p>
-              Hello world is a function that displays an alert with a message of
-              "Hello World"
+              My first function getValue is my starter/controller function. I
+              initially add an invisible class to hide any previous results and
+              remove any alert styling from the same results HTML getting it
+              ready for the next input. The users entered string/value is then
+              retrieved from the page and put into my checkForPalindrome
+              function as a parameter, with the result of that used in my
+              displayString function to finally be displayed to the user.
+            </p>
+            <h5>Check For Palindrome</h5>
+            <p>
+              I first have to make sure to simplify the users input, as
+              palindromes are not concerned with any capitals, special
+              characters, or spaces; these have to be removed. Lower casing the
+              letters are dealt with by the JS function toLowerCase, and the
+              spaces and special characters dealt with by using regex. I then
+              define a new empty array and empty object with my string/value
+              ready to be reversed. A decrementing for loop is used to reverse
+              the string and add it to revString array upon each iteration,
+              using the revString data to then check against the userString,
+              which should match if the user entered a palindrome; this is done
+              in an if else statement. I then dynamically create a user message
+              depending on the result of that check (added to returnObj), while
+              also adding styling. Finally, the revString is added to returnObj
+              and returnObj is returned to getValues above.
+            </p>
+            <h5>Display String</h5>
+            <p>
+              My returnObj is taken in as a parameter and I am able to add both
+              the dynamically created user message and the result of reversing
+              the users string to be displayed to the user. This finishes the
+              apps functionality.
             </p>
           </div>
         </div>
