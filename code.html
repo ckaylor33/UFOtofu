@@ -1,90 +1,66 @@
 <!DOCTYPE html>
 <html lang="en" class="h-100">
-  <head>
-    <title>UFO TOFU: A Coding Project By Charlie Kaylor</title>
-    <!-- Required meta tags -->
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
 
-    <!-- Bootstrap CSS -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
-      crossorigin="anonymous"
-    />
+<head>
+  <title>UFO TOFU: A Coding Project By Charlie Kaylor</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 
-    <script
-      src="https://kit.fontawesome.com/5db21ba9c6.js"
-      crossorigin="anonymous"
-    ></script>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
 
-    <link rel="stylesheet" href="/css/site.css" />
+  <script src="https://kit.fontawesome.com/5db21ba9c6.js" crossorigin="anonymous"></script>
 
-    <link rel="stylesheet" href="css/prism.css" />
+  <link rel="stylesheet" href="/css/site.css" />
 
-    <link rel="icon" href="img/favicon (1).ico" />
-  </head>
+  <link rel="stylesheet" href="css/prism.css" />
 
-  <body class="d-flex flex-column h-100">
-    <!-- Nav Section -->
-    <nav class="navbar navbar-expand-md navbar-dark fixed-top">
-      <div class="container-fluid">
-        <a class="navbar-brand logoFont" href="index.html"
-          ><i class="fas fa-code d-inline-block align-text-center"></i> UFO
-          TOFU</a
-        >
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarCollapse"
-          aria-controls="navbarCollapse"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarCollapse">
-          <ul class="navbar-nav me-auto mb-2 mb-md-0">
-            <li class="nav-item">
-              <a class="nav-link" href="index.html">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="app.html">The App</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="code.html"
-                >The Code</a
-              >
-            </li>
-            <li class="nav-item">
-              <a
-                class="nav-link"
-                target="_blank"
-                href="https://github.com/ckaylor33/UFOtofu"
-                >Git Repo</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" target="_blank" href="#">About</a>
-            </li>
-          </ul>
-        </div>
+  <link rel="icon" href="img/favicon (1).ico" />
+</head>
+
+<body class="d-flex flex-column h-100">
+  <!-- Nav Section -->
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand logoFont" href="index.html"><i class="fas fa-code d-inline-block align-text-center"></i>
+        UFO
+        TOFU</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+        aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav me-auto mb-2 mb-md-0">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="app.html">The App</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="code.html">The Code</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" target="_blank" href="https://github.com/ckaylor33/UFOtofu">Git Repo</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" target="_blank" href="#">About</a>
+          </li>
+        </ul>
       </div>
-    </nav>
-    <!-- Main Section -->
-    <main class="flex-shrink-0">
-      <div class="container py-5 px-5 mt-5">
-        <h2 class="border-1 border-bottom border-dark customBorderBottom">
-          The Code for UFO TOFU.
-        </h2>
-        <div class="row row-cols-1 row-cols-lg-2">
-          <div class="col-lg-8">
-            <pre class="line-numbers"><code class="language-javascript">
+    </div>
+  </nav>
+  <!-- Main Section -->
+  <main class="flex-shrink-0">
+    <div class="container py-5 px-5 mt-5">
+      <h2 class="border-1 border-bottom border-dark customBorderBottom">
+        The Code for UFO TOFU.
+      </h2>
+      <div class="row row-cols-1 row-cols-lg-2">
+        <div class="col-lg-8">
+          <pre class="line-numbers"><code class="language-javascript">
               //Get string value from the user
               function getValue() {
                 document.getElementById('alert').classList.add('invisible')
@@ -140,131 +116,113 @@
               }
               
             </code></pre>
-          </div>
-          <div class="col-lg-4">
-            <p>The code is structured in three functions.</p>
-            <h5>Get Value</h5>
-            <p>
-              My first function getValue is my starter/controller function. I
-              initially add an invisible class to hide any previous results and
-              remove any alert styling from the same results HTML getting it
-              ready for the next input. The users entered string/value is then
-              retrieved from the page and put into my checkForPalindrome
-              function as a parameter, with the result of that used in my
-              displayString function to finally be displayed to the user.
-            </p>
-            <h5>Check For Palindrome</h5>
-            <p>
-              I first have to make sure to simplify the users input, as
-              palindromes are not concerned with any capitals, special
-              characters, or spaces; these have to be removed. Lower casing the
-              letters are dealt with by the JS function toLowerCase, and the
-              spaces and special characters dealt with by using regex. I then
-              define a new empty array and empty object with my string/value
-              ready to be reversed. A decrementing for loop is used to reverse
-              the string and add it to revString array upon each iteration,
-              using the revString data to then check against the userString,
-              which should match if the user entered a palindrome; this is done
-              in an if else statement. I then dynamically create a user message
-              depending on the result of that check (added to returnObj), while
-              also adding styling. Finally, the revString is added to returnObj
-              and returnObj is returned to getValues above.
-            </p>
-            <h5>Display String</h5>
-            <p>
-              My returnObj is taken in as a parameter and I am able to add both
-              the dynamically created user message and the result of reversing
-              the users string to be displayed to the user. This finishes the
-              apps functionality.
-            </p>
-          </div>
+        </div>
+        <div class="col-lg-4">
+          <p>The code is structured in three functions.</p>
+          <h5>Get Value</h5>
+          <p>
+            My first function getValue is my starter/controller function. I
+            initially add an invisible class to hide any previous results and
+            remove any alert styling from the same results HTML getting it
+            ready for the next input. The users entered string/value is then
+            retrieved from the page and put into my checkForPalindrome
+            function as a parameter, with the result of that used in my
+            displayString function to finally be displayed to the user.
+          </p>
+          <h5>Check For Palindrome</h5>
+          <p>
+            I first have to make sure to simplify the users input, as
+            palindromes are not concerned with any capitals, special
+            characters, or spaces; these have to be removed. Lower casing the
+            letters are dealt with by the JS function toLowerCase, and the
+            spaces and special characters dealt with by using regex. I then
+            define a new empty array and empty object with my string/value
+            ready to be reversed. A decrementing for loop is used to reverse
+            the string and add it to revString array upon each iteration,
+            using the revString data to then check against the userString,
+            which should match if the user entered a palindrome; this is done
+            in an if else statement. I then dynamically create a user message
+            depending on the result of that check (added to returnObj), while
+            also adding styling. Finally, the revString is added to returnObj
+            and returnObj is returned to getValues above.
+          </p>
+          <h5>Display String</h5>
+          <p>
+            My returnObj is taken in as a parameter and I am able to add both
+            the dynamically created user message and the result of reversing
+            the users string to be displayed to the user. This finishes the
+            apps functionality.
+          </p>
         </div>
       </div>
-    </main>
+    </div>
+  </main>
 
-    <!-- Footer Section -->
-    <footer class="footer mt-auto py-1">
-      <div class="container-fluid">
-        <div class="row row-cols-1 row-cols-lg-3 gy-2">
-          <div
-            class="
+  <!-- Footer Section -->
+  <footer class="footer mt-auto py-1">
+    <div class="container-fluid">
+      <div class="row row-cols-1 row-cols-lg-3 gy-2">
+        <div class="
               col
               order-last order-lg-first
               text-light
               d-flex
               align-items-center
-            "
-          >
-            <div>
-              <span class="text-muted">&copy;2021</span> Charlie Kaylor |
-              charliekaylor@hotmail.com
-            </div>
+            ">
+          <div>
+            <span class="text-muted">&copy;2022</span> Charlie Kaylor |
+            charliekaylor@hotmail.com
           </div>
-          <div
-            class="
+        </div>
+        <div class="
               col
               d-flex
               align-items-center
               justify-content-start justify-content-lg-center
-            "
-          >
-            <img
-              src="img/White logo - no background.svg"
-              alt="Charlie Kaylor Logo"
-              height="59"
-            />
-          </div>
-          <div
-            class="
+            ">
+          <img src="img/White logo - no background.svg" alt="Charlie Kaylor Logo" height="59" />
+        </div>
+        <div class="
               col
               d-flex
               align-items-center
               justify-content-start justify-content-lg-end
-            "
-          >
-            <div class="row">
-              <div class="col social">
-                <a href="#" target="_blank"
-                  ><i class="fab fa-linkedin fa-2x"></i
-                ></a>
-              </div>
-              <div class="col social">
-                <a href="#" target="_blank"
-                  ><i class="fab fa-github fa-2x"></i
-                ></a>
-              </div>
-              <div class="col social">
-                <a href="#" target="_blank"
-                  ><i class="fab fa-twitter fa-2x"></i
-                ></a>
-              </div>
+            ">
+          <div class="row">
+            <div class="col social">
+              <a href="https://www.linkedin.com/in/charlie-kaylor-2223951b3/" target="_blank"><i
+                  class="fab fa-linkedin fa-2x"></i></a>
+            </div>
+            <div class="col social">
+              <a href="https://github.com/ckaylor33" target="_blank"><i class="fab fa-github fa-2x"></i></a>
+            </div>
+            <div class="col social">
+              <a href="https://twitter.com/charlie_kaylor" target="_blank"><i class="fab fa-twitter fa-2x"></i></a>
             </div>
           </div>
         </div>
       </div>
-    </footer>
+    </div>
+  </footer>
 
-    <!-- Bootstrap JS -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
-      integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
-      integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
-      crossorigin="anonymous"
-    ></script>
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+    integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+    integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous">
+  </script>
 
-    <script src="js/prism.js"></script>
+  <script src="js/prism.js"></script>
 
-    <script>
-      Prism.plugins.NormalizeWhitespace.setDefaults({
-        'remove-trailing': true,
-        'remove-indent': true,
-        'left-trim': true,
-        'right-trim': true,
-      })
-    </script>
-  </body>
+  <script>
+    Prism.plugins.NormalizeWhitespace.setDefaults({
+      'remove-trailing': true,
+      'remove-indent': true,
+      'left-trim': true,
+      'right-trim': true,
+    })
+  </script>
+</body>
+
 </html>
