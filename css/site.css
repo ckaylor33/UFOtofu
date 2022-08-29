@@ -97,7 +97,7 @@ footer .social > a:hover {
 }
 
 .checklist > li i {
-  color: var(--dark-color);
+  color: var(--primary-color);
 }
 
 code[class*='language-'],
